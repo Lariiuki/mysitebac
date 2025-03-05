@@ -1,8 +1,10 @@
 # mysitebac
 Django Personal Blog
+Repositório utilizado para teste da aula da Ebac
 
 Django
 
+Como preparar seu repositório:
 1. Pwd
 2. Git clone <link do repositorio>
 3. Python3 —version

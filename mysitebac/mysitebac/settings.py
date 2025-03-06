@@ -1,3 +1,5 @@
+# Contém as definições de configuração para o projeto Django.
+
 """
 Django settings for mysitebac project.
 
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog', # Adicionado manualmente
 ]
 
 MIDDLEWARE = [

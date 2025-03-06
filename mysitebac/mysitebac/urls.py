@@ -1,3 +1,5 @@
+# Contém padrões de URL para o projeto Django
+
 """
 URL configuration for mysitebac project.
 

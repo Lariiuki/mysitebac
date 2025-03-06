@@ -1,0 +1,1 @@
+# Um script Python em branco cuja presença indica ao interpretador Python que o diretório é um pacote Python

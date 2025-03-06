@@ -1,3 +1,5 @@
+# Contém propriedades de configuração WSGI para o projeto Django. Basicamente, o script Python usado para ajudar a executar seu servicor de desenvolvimento e implantar seu proejto em um ambiente de produção
+
 """
 WSGI config for mysitebac project.
 

@@ -20,7 +20,7 @@ class Post(models.Model):
     class Meta:
         ordering = ['-created_on']
         # o Django não vai criar uma tabela para este modelo se o abstract for True
-        abstract = True
+        abstract = False
 
     def __str__(self):
         return self.title

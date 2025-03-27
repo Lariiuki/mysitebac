@@ -1,5 +1,5 @@
 import pytest
-from blog.factories import PostFactory  # Ensure this import is correct and the module exists
+from mysitebac.blog.factories import PostFactory 
 
 @pytest.fixture
 def post_published():

@@ -13,10 +13,12 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+TEMPLATES_DIRS = os.path.join(BASE_DIR, 'templates') # Adicionado manualmente
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
@@ -56,10 +58,10 @@ ROOT_URLCONF = 'mysitebac.urls'
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
-        'OPTIONS': {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates', # Backend é o caminho para uma classe que implementa a API de templates do Django
+        'DIRS': [TEMPLATES_DIRS], # DIRS define uma lista de diretorios onde o Django deve procurar por templates
+        'APP_DIRS': True, # APP DIRS define se o Django deve procurar por templates dentro dos diretórios dos apps instalandos em INSTALLED_APPS
+        'OPTIONS': { # OPSTIONS contém configurações especificas do BACKEND escolhido, ou seja, dependendo do backend de templates que você escolher, você poderá configura-lo utilizando OPTIONS
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
